@@ -52,3 +52,33 @@ def measureROIs(image_data):
             }
 
     return img_index, roi_metrics
+
+# Define an alternative version of the function that skips the background subtraction
+# so we can compare the result of doing it to not doing it
+
+def measureROIs_noBS(image_data):
+    img_index, my_image, my_mask_n = image_data
+    roi_metrics = {}
+    my_rois = np.unique(my_mask_n)
+    my_rois = my_rois[my_rois != 0]
+
+    for roi in my_rois:
+        area = np.sum(my_mask_n == roi)
+        roi_metrics[roi] = {}
+
+        for channel_index in range(my_image.shape[0]):
+            roi_pixels = my_image[channel_index, my_mask_n == roi]
+            if roi_pixels.size == 0:
+                logging.warning(f"ROI {roi} in Image {img_index}, Channel {channel_index} is empty.")
+                continue
+
+            roi_metrics[roi][f'Channel {channel_index}'] = {
+                'area': area,
+                'avg': np.mean(roi_pixels),
+                'median': np.median(roi_pixels),
+                'std': np.std(roi_pixels),
+                'maxima': np.max(roi_pixels),
+                'minima': np.min(roi_pixels)
+            }
+            
+    return img_index, roi_metrics
