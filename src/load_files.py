@@ -17,16 +17,3 @@ def img_loadr(file_path):
         logging.error(error_msg)
         errors.append(error_msg)
         return None, file_path
-
-
-# Define function to check dimensions of images and masks
-def img_sizr(image_types, file_indices):
-    for f in file_indices:
-        for image_type in image_types:
-            try:
-                image_shape = all_images[image_type][f].shape
-                logging.info(f"File {f} ({image_type}): {image_shape}")
-            except IndexError:
-                logging.warning(f"File index {f} for {image_type} is out of range.")
-            except KeyError:
-                logging.error(f"Image type {image_type} does not exist.")
