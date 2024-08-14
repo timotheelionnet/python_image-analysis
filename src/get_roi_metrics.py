@@ -1,18 +1,28 @@
 # Define a function that processes all the ROIs in one image:
 # * it calculates the mean background intensity in the image
-# * it subtracts that background value from the intensity in each ROI
+# * if indicated, it subtracts that background value from the intensity in each ROI
 # * it calculates the area of each ROI
 # * it calculates the mean, median, STD, max and min intensity (minus background) for each ROI
 
 import numpy as np
 import logging
 
-def measureROIs(image_data):
+# Import get_largest_background function from background_subtraction.py
+from background_subtraction import get_largest_background
+
+# The function takes two arguments: the image data and whether or not to do background subtraction (T/F)
+def measureROIs(image_data, subtract_background=False):
     img_index, my_image, my_mask_n = image_data
     roi_metrics = {}
     my_rois = np.unique(my_mask_n)
 
-    # Process each ROI (excluding background labeled as '0')
+    # Retrieve background intensities if subtraction is requested
+    background_intensities = None
+    if subtract_background:
+        background_data = get_largest_background(my_mask_n, my_image)
+        background_intensities = background_data['average_intensities']
+
+    # Process each ROI (excluding background, labeled as '0')
     for roi in my_rois:
         if roi == 0:  # Skip the background ROI
             continue
@@ -25,8 +35,14 @@ def measureROIs(image_data):
             if roi_pixels.size == 0:
                 logging.warning(f"ROI {roi} in Image {img_index}, Channel {channel_index} is empty.")
                 continue
+
+            # Perform background subtraction if requested
+            # It will remove the average intensity of the largest background object in each image
+            # from the intensity values of all the pixels in each ROI (non-zero ROIs)
+            if subtract_background:
+                roi_pixels = roi_pixels - background_intensities[channel_index]
                 
-            # Calculate metrics directly from the ROI pixels
+            # Calculate metrics directly from the ROI pixels (with or without background subtraction)
             roi_metrics[roi][f'Channel {channel_index}'] = {
                 'area': area,
                 'avg': np.mean(roi_pixels),
