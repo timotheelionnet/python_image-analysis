@@ -1,0 +1,14 @@
+plasmid,promoter,miRNA,target_sites,left_transcript,right_transcript
+pDIMMER_NT-EGFP_TLP1c_no-miR,pECM,no_miR,0,mRuby,NT-EGFP_TLP1c
+pDIMMER_NT-EGFP_TLP1c_miR-Lx4_synmiR,pECM,synmiR,4,mRuby,NT-EGFP_TLP1c_miR-Lx4_synmiR
+pDIMMER_NT-EGFP_TLP1c_miR-Lx4_miR-L,pECM,miR-L,4,mRuby,NT-EGFP_TLP1c_miR-Lx4_miR-L
+pDIMMER_NT-EGFP_TLP1c_miR-Lx2_miR-L,pECM,miR-L,2,mRuby,NT-EGFP_TLP1c_miR-Lx2_miR-L
+pPGK_NT-EGFP_TLP1c,pPGK,no_miR,0,none,NT-EGFP_TLP1c
+pPGK_NT-EGFP_TLP1c_miR-Lx4_miR-L,pPGK,miR-L,4,none,NT-EGFP_TLP1c_miR-Lx4_miR-L
+pCMV_NT-EGFP_TLP1c,pCMV,no_miR,0,none,NT-EGFP_TLP1c
+pCMV_NT-EGFP_TLP1c_miR-Lx4_miR-L,pCMV,miR-L,4,none,NT-EGFP_TLP1c_miR-Lx4_miR-L
+pEC_NT-EGFP_TLP1c,pCMV-EF1a,no_miR,0,none,NT-EGFP_TLP1c
+pEC_NT-EGFP_TLP1c_miR-Lx4_miR-L,pCMV-EF1a,miR-L,4,none,NT-EGFP_TLP1c_miR-Lx4_miR-L
+pDIMMER_NT-EGFP_TLP1c_mirLx4_mRuby_miR-L,pECM,miR-L,4,mRuby_miR-L,NT-EGFP_TLP1c_mirLx4
+pDIMMER_NT-EGFP_TLP1c_mirLx4_mRuby_synmiR,pECM,synmiR,4,mRuby_synmiR,NT-EGFP_TLP1c_mirLx4
+none,none,none,none,none,none
