@@ -29,6 +29,7 @@ def get_largest_background(mask, image, image_index):
             'area': 0, 
             'average_intensities': [0] * image.shape[0], 
             'median_intensities': [0] * image.shape[0], 
+            'min_intensities': [0] * image.shape[0],
             'image_index' : image_index
         }
     
@@ -43,19 +44,23 @@ def get_largest_background(mask, image, image_index):
     # Calculate the average intensity for each channel in the largest background area
     avg_intensities = []
     median_intensities = []
+    min_intensities = []
     for channel in range(image.shape[0]):
         channel_data = image[channel]
         largest_region = channel_data[largest_slice]
         masked_region = largest_region[labeled_bg[largest_slice] == largest_index + 1]
         avg_intensity = np.mean(masked_region)
         median_intensity = np.median(masked_region)
+        min_intensity = np.min(masked_region)
         avg_intensities.append(avg_intensity)
         median_intensities.append(median_intensity)
+        min_intensities.append(min_intensity)
     
     return {
         'area': areas[largest_index],
         'average_intensities': avg_intensities,
         'median_intensities': median_intensities,
+        'min_intensities': min_intensities,
         'image_index': image_index
     }
 
