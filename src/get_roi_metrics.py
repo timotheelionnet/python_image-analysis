@@ -1,6 +1,6 @@
 # Define a function that processes all the ROIs in one image:
-# * it calculates the mean background intensity in the image
-# * if requested, it subtracts that background value from the intensity in each ROI
+# * it calculates the min background intensity in the image
+# * if requested, it subtracts that min background value from the intensity in each ROI
 # * it calculates the area of each ROI
 # * it calculates the mean, median, STD, max and min intensity (minus background) for each ROI
 # * it returns those metric
@@ -38,7 +38,7 @@ def measureROIs(image_data, subtract_background=False):
     background_intensities = None
     if subtract_background:
         background_data = get_largest_background(my_mask_n, my_image, img_index)
-        background_intensities = background_data['median_intensities']
+        background_intensities = background_data['min_intensities']
 
     # Process each ROI (excluding background, labeled as '0')
     for roi in my_rois:
@@ -55,7 +55,7 @@ def measureROIs(image_data, subtract_background=False):
                 continue
 
             # Perform background subtraction if requested
-            # It will remove the median intensity of the largest background object in each image
+            # It will remove the min intensity of the largest background object in each image
             # from the intensity values of all the pixels in each ROI (non-zero ROIs)
             if subtract_background and background_intensities:
                 roi_pixels = roi_pixels - background_intensities[channel_index]
