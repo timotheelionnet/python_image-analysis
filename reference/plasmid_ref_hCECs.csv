@@ -1,0 +1,9 @@
+plasmid,promoter,fusion,probe,NLS,polyA
+pHAGE_mStayGold_dCas9,pCMV,NT-mStayGold,dCas9,SV40,none
+pHAGE_mStayGold_Cen7-ZF1g,pCMV,NT-mStayGold,Cen7-ZF1g,none,none
+pHAGE_mStayGold_Cen7-ZF2g,pCMV,NT-mStayGold,Cen7-ZF2g,none,none
+pHAGE_mStayGold_Cen7-ZF1g_v2,pCMV,NT-mStayGold,Cen7-ZF1g_v2,none,none
+none,none,none,none,none,none
+pLenti_sgNC,U6,none,sgNC,none,none
+pLenti_sgRNA7-1,U6,none,sg7-1,none,none
+pLenti_sgRNA7-3,U6,none,sg7-3,none,none

@@ -1,0 +1,7 @@
+plasmid,promoter,fusion,probe,NLS,polyA
+NT-GFP_Telo-ZF1a,pCMV,NT-GFP,Telo-ZF1a,SV40,bGH
+NT-GFP_Telo-ZF2a,pCMV,NT-GFP,Telo-ZF2a,SV40,bGH
+NT-GFP_Telo-ZF3a,pCMV,NT-GFP,Telo-ZF3a,SV40,bGH
+NT-GFP_Telo-ZF4a,pCMV,NT-GFP,Telo-ZF4a,SV40,bGH
+NT-GFP_Telo-ZF5a,pCMV,NT-GFP,Telo-ZF5a,SV40,bGH
+NT-GFP_Telo-ZF6a,pCMV,NT-GFP,Telo-ZF6a,SV40,bGH
