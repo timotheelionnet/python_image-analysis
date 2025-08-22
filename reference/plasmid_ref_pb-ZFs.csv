@@ -1,0 +1,6 @@
+plasmid,promoter,fusion,probe,NLS,polyA
+NT-GFP_Cen7-ZF1g,pCMV,NT-GFP,Cen7-ZF1g,SV40,bGH
+pb_NT-GFP_Cen7-ZF1g,pEF1a,NT-GFP,Cen7-ZF1g,SV40,bGH
+NT-ABI1_Cen7-ZF1g_mStayGold,pCMV,CT-mStayGold,Cen7-ZF1g,SV40,bGH
+pb_NT-mStayGold_Cen7-ZF1g_v2_bGHpA,pEF1a,NT-mStayGold,Cen7-ZF1g,none,bGH
+pb_NT-mStayGold_Cen7-ZF1g_v2_SV40pA,pEF1a,NT-mStayGold,Cen7-ZF1g,none,SV40
