@@ -3,7 +3,15 @@ pHAGE_mStayGold_dCas9,pCMV,NT-mStayGold,dCas9,SV40,none
 pHAGE_mStayGold_Cen7-ZF1g,pCMV,NT-mStayGold,Cen7-ZF1g,none,none
 pHAGE_mStayGold_Cen7-ZF2g,pCMV,NT-mStayGold,Cen7-ZF2g,none,none
 pHAGE_mStayGold_Cen7-ZF1g_v2,pCMV,NT-mStayGold,Cen7-ZF1g_v2,none,none
+pHAGE_mStayGold_Cen18-ZF1d,pCMV,NT-mStayGold,Cen18-ZF1d,none,none
+pHAGE_mStayGold_Cen6-ZF1c,pCMV,NT-mStayGold,Cen6-ZF1c,none,none
 none,none,none,none,none,none
 pLenti_sgNC,U6,none,sgNC,none,none
 pLenti_sgRNA7-1,U6,none,sg7-1,none,none
 pLenti_sgRNA7-3,U6,none,sg7-3,none,none
+pLenti_sgRNA6-2,U6,none,sg6-2,none,none
+pLenti_sgRNA18-4,U6,none,sg18-4,none,none
+pLenti_sgBRF1-1,U6,none,sgBRF1-1,none,none
+pLenti_sgBRF1-2,U6,none,sgBRF1-2,none,none
+pLenti_sgMUC4-E3,U6,none,sgMUC4-E3,none,none
+pLenti_sgMUC4-I2,U6,none,sgMUC4-I2,none,none
