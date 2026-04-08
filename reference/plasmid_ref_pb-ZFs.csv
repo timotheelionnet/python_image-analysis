@@ -1,4 +1,5 @@
 plasmid,promoter,fusion,probe,NLS,polyA
+none,none,none,none,none,none
 NT-GFP_Cen7-ZF1g,pCMV,NT-GFP,Cen7-ZF1g,SV40,bGH
 pb_NT-GFP_Cen7-ZF1g,pEF1a,NT-GFP,Cen7-ZF1g,SV40,bGH
 NT-ABI1_Cen7-ZF1g_mStayGold,pCMV,CT-mStayGold,Cen7-ZF1g,SV40,bGH
@@ -78,3 +79,16 @@ pb_HaloTag_Cen22-ZF1a-v2_SV40pA,pEF1a,NT-HaloTag,Cen22-ZF1a,none,SV40
 pb_HaloTag_CenX-ZF1a-v2_SV40pA,pEF1a,NT-HaloTag,CenX-ZF1a,none,SV40
 pb_HaloTag_CenX-ZF1c-v2_SV40pA,pEF1a,NT-HaloTag,CenX-ZF1c,none,SV40
 pb_HaloTag_CenY-ZF4b-v2_SV40pA,pEF1a,NT-HaloTag,CenY-ZF4b,none,SV40
+pb_mScarlet3-H_Cen7-ZF1f_v2_sv40pA,pEF1a,NT-mScarlet3-H,Cen7-ZF1f,none,SV40
+pb_mScarlet3-H_Cen9-ZF1a_v2_sv40pA,pEF1a,NT-mScarlet3-H,Cen9-ZF1a,none,SV40
+pb_mScarlet3-H_Cen10-ZF2c_v2_sv40pA,pEF1a,NT-mScarlet3-H,Cen10-ZF2c,none,SV40
+pb_mScarlet3-H_Cen11-ZF1b_v2_sv40pA,pEF1a,NT-mScarlet3-H,Cen11-ZF1b,none,SV40
+pb_mScarlet3-H_Cen15-ZF2c_v2_sv40pA,pEF1a,NT-mScarlet3-H,Cen15-ZF2c,none,SV40
+pb_NT-GFP_Cen8-ZF7a,pEF1a,NT-GFP,Cen8-ZF7a,SV40,bGH
+pb_NT-GFP_Cen8-ZF8b,pEF1a,NT-GFP,Cen8-ZF8b,SV40,bGH
+pb_NT-GFP_Cen12-ZF1b,pEF1a,NT-GFP,Cen12-ZF1b,SV40,bGH
+pb_NT-GFP_Cen17-ZF1a,pEF1a,NT-GFP,Cen17-ZF1a,SV40,bGH
+pb_NT-GFP_Cen20-ZF2b,pEF1a,NT-GFP,Cen20-ZF2b,SV40,bGH
+pb_NT-Halo_Cen12-ZF1b,pEF1a,NT-GFP,Cen12-ZF1b,SV40,bGH
+pb_NT-Halo_Cen17-ZF1a,pEF1a,NT-GFP,Cen17-ZF1a,SV40,bGH
+pb_NT-Halo_Cen20-ZF2b,pEF1a,NT-GFP,Cen20-ZF2b,SV40,bGH
